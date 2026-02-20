@@ -18,13 +18,9 @@ img[src="me-300-by-300.jpg"] {
 
 img[src="momo-300-by-300.jpg"] {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   border: 3px solid #eb4d22;
   border-radius: 8px;
-
-  max-width: 100%;
-  height: auto;
 }
 
 .title {
