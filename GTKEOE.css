@@ -18,7 +18,8 @@ img[src="me-300-by-300.jpg"] {
 
 img[src="momo-300-by-300.jpg"] {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   border: 3px solid #eb4d22;
   border-radius: 8px;
 }
@@ -54,6 +55,7 @@ overflow: hidden;
 
 section{
   text-align: center;
+  max-width: 800px;
   width: 80%;
   border: 4px solid transparent;
   border-radius: 15px;
