@@ -22,6 +22,9 @@ img[src="momo-300-by-300.jpg"] {
   margin-right: auto;
   border: 3px solid #eb4d22;
   border-radius: 8px;
+
+  max-width: 100%;
+  height: auto;
 }
 
 .title {
@@ -82,10 +85,4 @@ ul {
   list-style-type: square;
    list-style-position: inside;
    padding: 0;
-}
-
-/* Make all images responsive */
-img {
-  max-width: 100%;
-  height: auto;
 }
