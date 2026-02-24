@@ -21,3 +21,19 @@ function playSound() {
 
 momoImage.addEventListener("click", playSound);
 button.addEventListener("click", playSound);
+
+
+
+const momoLogo = document.getElementById("momoLogo");
+const explosion = document.getElementById("explosion");
+
+momoLogo.addEventListener("click", () => {
+  explosion.classList.add("boom");
+  momoLogo.style.visibility = "hidden";
+  momoImage.addEventListener("click", playSound);
+button.addEventListener("click", playSound);
+
+  explosion.addEventListener("animationend", () => {
+    explosion.classList.remove("boom");
+  }, { once: true });
+});

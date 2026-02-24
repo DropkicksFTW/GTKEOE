@@ -2,6 +2,13 @@ h1 {color:rgb(27, 26, 46);
   text-align: center;
 } 
 
+.momo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
 img[src="me-800-by-800.jpg"] {
   display: block;
   margin: 0 auto;
@@ -81,4 +88,52 @@ ul {
   list-style-type: square;
    list-style-position: inside;
    padding: 0;
+}
+
+
+
+
+.logo-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.momo-logo {
+  width: 35px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Explosion circle */
+.explosion {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10px;
+  height: 10px;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  background: radial-gradient(circle, orange, red, transparent);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* When triggered */
+.explosion.boom {
+  animation: explode 500ms ease-out forwards;
+}
+
+@keyframes explode {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(4);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(6);
+    opacity: 0;
+  }
 }
