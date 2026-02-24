@@ -12,7 +12,10 @@
   <div class="container">
   
     <header class="title">
-      <h1 id="color-1">Michael Santay’s website</h1>
+  <div class="momo-icon">
+    <img src="momo.ico" alt="Logo" class="momo-logo">
+    <h1 id="color-1">Michael Santay’s website</h1>
+  </div>
       <img src="me-800-by-800.jpg" alt="image of me" />
       <p>Preferred Name: Michael</p>
       <p>My discord username: keanureeves2077</p>
@@ -47,10 +50,15 @@
     <section class="fun-fact">
       <h2>Fun Fact</h2>
       <p>I adopted a kitten in October, her name is Momo.</p>
-      <button id="funFactButton" type="button">Hear Momo</button>
+      <button id="funFactButton" type="button">Click to meow</button>
       <img id="momoImage" src="momo-300-by-300.jpg" alt="Picture of Momo" />
       <audio id="momoAudio" src="momo-meow.mp3"></audio>
     </section>
+
+    <div class="logo-wrap">
+  <img src="momo.ico" alt="Logo" class="momo-logo" id="momoLogo">
+  <span class="explosion" id="explosion"></span>
+</div>
 
     <footer>
       <p>Last updated 2/16/2026</p>
