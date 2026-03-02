@@ -1,7 +1,9 @@
 h1 {color:rgb(27, 26, 46); 
   text-align: center;
 } 
-
+a:hover {
+    color: orangered;
+}
 .momo-icon {
   display: flex;
   align-items: center;
